@@ -4,18 +4,13 @@ class Pessoa {
     var cpf: String = "123.456.789-10"
         private set
 
-    inner class Endereco{
-
-        var rua: String = "Rua teste"
-    }
-
+    fun datauni()="$nome e $cpf"
 }
 fun main(){
 
     val clientename = Pessoa()
 
-    println(clientename.nome)
-    println(clientename.cpf)
-    println(clientename.Endereco().rua)//inner class chamada
+   println(clientename.datauni())
+
 
 }
